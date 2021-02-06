@@ -2,6 +2,7 @@ const { owners } = require("../config.json");
 
 module.exports = {
   name: "eval",
+  category: "dev",
   desc: "evaluate code on the server (very sneaky)",
   run: async (msg, args, bot) => {
     // check if its sent by a bot owner
