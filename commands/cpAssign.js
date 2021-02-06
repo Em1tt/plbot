@@ -3,6 +3,7 @@ const modCheck = require("../util/modCheck");
 
 module.exports = {
   name: "assigncp",
+  category: "mod",
   desc: "assign the cp role to some user",
   run: async (msg, args, bot) => {
     // check if the user is a moderator
