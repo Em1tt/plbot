@@ -7,9 +7,8 @@ module.exports = {
   desc: "spit a random question",
   run: async (msg, args, bot) => {
     // fetch the data
-    let res = await fetch(url);
-    let data = await res.json();
+    let data = await fetch(url).json();
 
-    await msg.reply(decode(`${data.results[0].question} (answer: ||${data.results[0].correct_answer}||)`));
+    await msg.reply(decode(`${data.results[0].question} answer:\n\n ||${data.results[0].correct_answer}||`));
   }
 }
